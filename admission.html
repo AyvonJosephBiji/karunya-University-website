@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Experiment-2</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 2px 5vw 2px 5vw;
+        }
+        
+        h1 {
+            text-align: center;
+            color: blue;
+        }
+        
+        hr {
+            border-style: dashed;
+        }
+        
+        fieldset {
+            display: flex;
+            width: 75%;
+            height: auto;
+            margin: 50px;
+            font-weight: bold;
+            text-align: center;
+            background-color: lightgrey;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Karunya Institute of Technology & Sciences</h1>
+    </header>
+
+    <nav>
+        <hr>
+        <table style="width: 100%; text-align: center">
+            <tr>
+                <td><a href="index.html">About Us</a></td>
+                <td>|</td>
+                <td><a href="admission.html">Admission</a></td>
+                <td>|</td>
+                <td><a href="calendar.html">Academic Calendar</a></td>
+                <td>|</td>
+                <td><b>Search:</b> <input type="text" placeholder="search here..."></td>
+            </tr>
+        </table>
+        <hr>
+    </nav>
+
+    <center>
+
+        <fieldset>
+            <legend>Application Form</legend>
+            <form style="margin: 25px auto" action="submit.php" method="post" autocomplete="on">
+                <label for="name">Name: </label>
+                <input type="text" placeholder="Enter your name" id="name" required autofocus>
+                <br><br> Application Number: <input type="text" placeholder="KU20201CS1001" pattern="KU[0-9]{4}CS[0-9]{4}" title="KU followed by 4 digits, followed by CS, followed by 
+4 digits" required>
+                <br><br> Password: <input type="password" placeholder="********" pattern=".{8,}" title="8 
+or more characters" required>
+                <br><br> Date of Birth: <input type="date" required>
+                <br><br> Age: <input type="number" required>
+                <br><br> Mobile Number: <input type="text" placeholder="Enter mobile number" pattern="[0-
+9]{10}" title="10 digits" required>
+                <br><br> Email: <input type="text" placeholder="Enter email id" pattern=".{1,32}@gmail.com" title="Eg. sample@gmail.com" required>
+                <br><br> Gender: <input type="radio">Male <input type="radio" required>Female
+                <br><br> Address: <textarea required></textarea>
+                <br><br> Languages Known:
+                <input type="checkbox">English
+                <input type="checkbox">Tamil
+                <input type="checkbox">Malayalam
+                <input type="checkbox">Telugu
+                <input type="checkbox">Hindi
+                <br><br> Select your course:
+                <select required>
+ <option>BTech CSE</option>
+ <option>BTech BioTech</option>
+ <option>BTech ECE</option>
+ <option>BTech EEE</option>
+ <option>BTech Mech</option>
+ <option>BTech Civil</option>
+ <option>BA</option>
+ <option>BBA</option>
+ <option>MBA</option>
+ </select>
+                <br><br> Upload your photo:
+                <input type="file" required>
+                <br><br>
+                <progress value="0.5"></progress> 50% Uploading Completed
+                <br><br><br>
+                <input type="submit">
+            </form>
+        </fieldset>
+
+    </center>
+</body>
+
+</html>
